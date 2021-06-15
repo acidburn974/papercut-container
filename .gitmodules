@@ -1,0 +1,6 @@
+[submodule "app/papercut"]
+	path = app/papercut
+	url = https://git.mistergeek.fr/acid/papercut.git
+[submodule ".\\app\\papercut"]
+	path = .\\app\\papercut
+	url = https://github.com/acidburn974/papercut.git

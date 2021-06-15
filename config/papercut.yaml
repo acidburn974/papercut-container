@@ -1,0 +1,17 @@
+# This is a simple example configuration for exposing a flat directory full of
+# mbox files via NNTP.
+maildir_path: '/usr/src/app/maildir'
+nntp_hostname: 0.0.0.0
+nntp_port: 119
+storage_backend: maildir
+server_type: read-write
+log_file: /usr/src/app/logs/papercut.log
+
+# This is a simple example configuration for exposing a flat directory full of
+# mbox files via NNTP.
+#mbox_path: '/usr/src/app/maildir'
+#nntp_hostname: 0.0.0.0
+#nntp_port: 119
+#storage_backend: mbox
+#server_type: read-write
+#log_file: /usr/src/app/logs/papercut.log

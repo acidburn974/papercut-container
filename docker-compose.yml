@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  papercut:
+    build:
+      context: '.'
+      dockerfile: Dockerfile
+    ports:
+      - "119:119"
+    volumes:
+      - ./app/papercut:/usr/src/app/papercut
+      - ./logs:/usr/src/app/logs
+      - ./maildir:/usr/src/app/maildir
+      - ./config/papercut.yaml:/etc/papercut/papercut.yaml
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
